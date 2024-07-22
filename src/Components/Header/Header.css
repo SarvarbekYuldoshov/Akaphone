@@ -8,3 +8,86 @@
     align-items: center;
     gap: 20px;
 }
+.header-link{
+     text-decoration: none;
+     padding-right: .5rem;
+     padding-left: .5rem;
+     color: rgba(0, 0, 0, .5);
+     display: block;
+     padding: .5rem 1rem; transition: all 0.7s ease;
+     transition: all 0.7s ease;
+     position: relative; 
+     display: inline-block;
+}
+.header-link:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+.header-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #2f60dd;
+}
+.header-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 0;
+}
+.header-title-a{
+    margin-bottom: 7px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: center;
+}
+.header-btn{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    padding: 9px 23px;
+    background-color: transparent;
+    border: 2px solid #eb4d4d;
+    color: #eb4d4d;
+}
+.header-btn:hover{
+    transform: scale(0.99);
+    transition: 1s;
+    background: #eb4d4d;
+    color: #FFFF;
+}
+.header-link-a{
+    font-size: 35px;
+    color: #31a9dd;
+    overflow: hidden;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    stroke: currentcolor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    height: 1em;
+    width: 1em;
+    overflow-clip-margin: content-box;
+    cursor: pointer;
+    transition: all 0.7s ease;
+     position: relative; 
+     display: inline-block;
+}
+.header-link-a:hover{
+    color: red;
+    transform: scale(1.090);
+    transition: 1s;
+}
