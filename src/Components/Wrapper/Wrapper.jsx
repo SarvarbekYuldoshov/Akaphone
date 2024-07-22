@@ -5,8 +5,11 @@ const Wrapper = () => {
     const {cards,setCards}  = useSharedStore
   return (
     <div>
-      Data && Data.map((item,index)=
-      })
+      Data && Data.map((item,index)=>(
+        {
+             .
+        }
+      ))
     </div>
   )
 }
