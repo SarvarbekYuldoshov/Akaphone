@@ -2,6 +2,6 @@
 
  const useSharedStore = create ((set)=>{
     cards: []
-    setCards: (cards)=>set({cards})
+    setCards: (newCards)=>set({cards:newCards})
  })
  export default useSharedStore
