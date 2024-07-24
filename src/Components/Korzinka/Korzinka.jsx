@@ -3,14 +3,9 @@ import "./Korzinka.css";
 import Cars from '../Card/Card';
 import useSharedStore from '../Store/Store';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-
-
-// import required modules
 import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
 
 const Korzinka = () => {
