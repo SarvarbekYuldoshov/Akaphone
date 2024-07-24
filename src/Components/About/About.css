@@ -85,37 +85,37 @@ body {
 }
 
 .swiper-slide:nth-child(2n) {
-  background-color: blue;
+  background-color: yellow;
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: blue;
+  background-color: red;
 }
 
 .swiper-slide:nth-child(4n) {
-  background-color: blue;
+  background-color: green;
 }
 
 .swiper-slide:nth-child(5n) {
-  background-color: blue;
+  background-color: orange;
 }
 
 .swiper-slide:nth-child(6n) {
-  background-color: blue;
+  background-color:brown;
 }
 
 .swiper-slide:nth-child(7n) {
-  background-color: blue;
+  background-color: yellowgreen;
 }
 
 .swiper-slide:nth-child(8n) {
-  background-color: blue;
+  background-color:sandybrown;
 }
 
 .swiper-slide:nth-child(9n) {
-  background-color: blue;
+  background-color: forestgreen;
 }
 
 .swiper-slide:nth-child(10n) {
-  background-color: blue;
+  background-color:hotpink;
 }
