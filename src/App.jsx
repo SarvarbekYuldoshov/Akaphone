@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import About from "./Components/About/About"
 import { Outlet } from 'react-router'
 import Korzinka from './Components/Korzinka/Korzinka'
+import Shopping from './Components/Shopping/Shopping'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,7 @@ function App() {
         <Header/>
         <About/>
         <Korzinka/>
-        <Outlet/>
+        <Shopping/>
      </div>
     </>
   )
