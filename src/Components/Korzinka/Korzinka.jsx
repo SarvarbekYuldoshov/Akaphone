@@ -18,10 +18,11 @@ const Korzinka = () => {
   }
   return (
     <div className='korzinka'>
-      <h1>Card</h1>
-      <Swiper
+      <div className='container korzinka-container'>
+        <h1 className='korzinka-title-one'>Горячие за неделью</h1>
+      <Swiper id='swiper'
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={4}
         hashNavigation={{
           watchState: true,
         }}
@@ -35,22 +36,21 @@ const Korzinka = () => {
         {Cars && Cars.map((item, index) => (
           <SwiperSlide className='card-item' key={index} >
             <div className='card1'>
-              <h1>{item.name}</h1>
-              <h2>{item.price}</h2>
-              <h3>{item.img}</h3>
-              <h4>{item.img}</h4>
-              <h4>{item.title}</h4>
-              <h4>{item.text}</h4>
-              <h4>{item.button}</h4>
-              <button disabled={add[item.name]} onClick={() => addCard(item)}>
+              <h1 className='korzinka-title'>{item.name}</h1>
+              <h2 className='korzinka-title_a'>{item.price}</h2>
+              <h3 className='korzinka-title_b'>{item.img}</h3>
+              <h4 className='korzinka-title_c'>{item.img}</h4>
+              <h4 className='korzinka-title_d'>{item.title}</h4>
+              <h4 className='korzinka-title_e'>{item.text}</h4>
+              <button className='korzinka-btn' disabled={add[item.name]} onClick={() => addCard(item)}>
                 {add[item.name] ? "Qushilgan" : "Qushish"}
               </button>
             </div>
           </SwiperSlide>
-
         ))}
       </Swiper>
 
+    </div>
     </div>
   );
 };
