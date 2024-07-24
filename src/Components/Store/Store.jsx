@@ -1,7 +1,10 @@
  import { create } from "zustand";
 
- const useSharedStore = create ((set)=>{
-    cards: []
-    setCards: (newCards)=>set({cards:newCards})
- })
- export default useSharedStore
+ const useSharedStore = create ((set)=>({
+   // count: 0,
+   // setCount: (newCount)=> set({count:newCount})
+   cars:[] ,
+   setCars: (newCars)=> set({cars:newCars})
+ }))
+
+ export default useSharedStore ;

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import Korzinka from "../Components/Korzinka/Korzinka";
 import App from "../App";
+import Shopping from "../Components/Shopping/Shopping";
 
 const router = createBrowserRouter([
     {
@@ -8,8 +8,8 @@ const router = createBrowserRouter([
         element: <App/>,
         children:[
             {
-                path: "/korzinka",
-                element: <Korzinka/>,
+                path: "/shopping",
+                element: <Shopping/>,
             } 
         ]
     },
