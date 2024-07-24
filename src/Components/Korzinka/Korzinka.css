@@ -1,0 +1,11 @@
+.mySwiper-card{
+    width: 100%;
+}
+.card-item{
+    background-color: white !important;
+    border: 1px solid black;
+    
+}
+.card1{
+    color: black;
+}

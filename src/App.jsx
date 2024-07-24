@@ -13,9 +13,7 @@ function App() {
     <>
      <div className='App'>
         <Header/>
-        <About/>
-        <Korzinka/>
-        <Shopping/>
+        <Outlet/>
      </div>
     </>
   )

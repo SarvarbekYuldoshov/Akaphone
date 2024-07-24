@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 
-export default function App() {
+export default function About() {
   return (
     <>
     <div className='about'>
