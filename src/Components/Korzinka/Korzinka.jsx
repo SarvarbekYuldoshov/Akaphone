@@ -1,14 +1,5 @@
 import { useState } from 'react';
 import "./Korzinka.css";
-import Rasm_1 from "../images/rasm1.png"
-import Rasm_2 from "../images/rasm2.png"
-import Rasm_3 from "../images/rasm3.png"
-import Rasm_4 from "../images/rasm4.png"
-import Rasm_5 from "../images/rasm5.png"
-import Rasm_6 from "../images/rasm7.png"
-import Rasm_7 from "../images/rasm8.png"
-import Rasm_8 from "../images/rasm9.png"
-import Rasm_9 from "../images/rasm10.png"
 import Cars from '../Card/Card';
 import useSharedStore from '../Store/Store';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,15 +15,6 @@ const Korzinka = () => {
   const addCard = (item) => {
     setCars([...cars, item]);
     setAdd((prev) => ({ ...prev, [item.name]: true }));
-  };
-  const Korzinka1 = {
-    img_a: foto_1,
-    title_a: "Google Pixel - Black",
-    text_a: "5%",
-    img_b: foto_1,
-    title_b: "Белый, серый, синий",
-    text_b: "10 ₽",
-    button: "Add To Cart"
   }
   return (
     <div className='korzinka'>
@@ -53,8 +35,13 @@ const Korzinka = () => {
         {Cars && Cars.map((item, index) => (
           <SwiperSlide className='card-item' key={index} >
             <div className='card1'>
-              <h1>{data}</h1>
+              <h1>{item.name}</h1>
               <h2>{item.price}</h2>
+              <h3>{item.img}</h3>
+              <h4>{item.img}</h4>
+              <h4>{item.title}</h4>
+              <h4>{item.text}</h4>
+              <h4>{item.button}</h4>
               <button disabled={add[item.name]} onClick={() => addCard(item)}>
                 {add[item.name] ? "Qushilgan" : "Qushish"}
               </button>
