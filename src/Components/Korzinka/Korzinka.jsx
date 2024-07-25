@@ -38,19 +38,19 @@ const Korzinka = () => {
       >
         {Cars && Cars.map((item, index) => (
           <SwiperSlide className='card-item' key={index} >
-        <Link to={`/detail/${item.id}`}>
         <img className='korzinka-img-a' src={Rasm_1} alt="" />
             <div className='card1'>
+            <Link to={`/detail/${item.id}`}>
               <h1 className='korzinka-title'>{item.name}</h1>
               <p className='korzinka-text'>{item.text}</p>
               <img className='korzinka-img'src={item.img} alt="" />
               <h2 className='korzinka-title-1'>{item.title}</h2>
               <h4 className='korzinka-title-2'>{item.price}</h4>
+              </Link>
               <button className='korzinka-btn' disabled={add[item.name]} onClick={() => addCard(item)}>
                 {add[item.name] ? "Qushilgan" : "Qushish"}
               </button>
             </div>
-        </Link>
           </SwiperSlide>
         ))}
       </Swiper>

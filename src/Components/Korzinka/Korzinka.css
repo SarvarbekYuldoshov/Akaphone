@@ -11,9 +11,10 @@
     color: black;
 }
 .korzinka-btn{
-    width:266px;
+    width:268px;
     height: 40px;
-    margin-right: 35px;
+    margin-left: -37px;
+    margin-top: -10px;
     border-radius: 1px;
     background-color: brown;
     color: aliceblue;
