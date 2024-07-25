@@ -53,8 +53,13 @@
 }
 .korzinka-img{
     margin-top: 20px;
+    margin-right: 20px;
     height: 300px;
-    width: 280px;
+    width: 270px;
+}
+.korzinka-img:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 .card-item{
     position: relative;
@@ -84,6 +89,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
+    color: antiquewhite;
 }
 .korzinka-title-1{
     margin-bottom: 3px;
@@ -95,6 +101,8 @@
     text-align: center;
 }
 .korzinka-title-2{
+    list-style: none;
+    margin-top: 10px;
     color: rgb(235, 77, 77);
     font-style: normal;
     font-weight: bold;

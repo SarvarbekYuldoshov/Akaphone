@@ -1,0 +1,24 @@
+.korzinka-btn-a{
+    color: black;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.korzinka-btn-a:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.korzinka-btn-b{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+}
+.korzinka-btn-b:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}

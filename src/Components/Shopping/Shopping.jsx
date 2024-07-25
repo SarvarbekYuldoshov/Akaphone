@@ -25,11 +25,14 @@ const Shopping = () => {
         <h1>Qushilgan mashinalar</h1>
         {cars && cars.map((item, index) => (
           <div key={index} className='card1'>
-            <h3>{item.name}</h3>
-            <h5>{count[item.id]}</h5>
-            <button onClick={() => decrement(item.id)}>-</button>
-            <button onClick={() => increment(item.id)}>+</button>
-            <button onClick={() => deleteCars(item.id)}>Delete</button>
+            <h1 className='korzinka-title'>{item.name}</h1>
+              <p className='korzinka-text'>{item.text}</p>
+              <img className='korzinka-img'src={item.img} alt="" />
+              <h2 className='korzinka-title-1'>{item.title}</h2>
+              <h4 className='korzinka-title-2'>{item.price}</h4>
+            <button className='korzinka-btn-a' onClick={() => decrement(item.id)}>-</button>
+            <button className='korzinka-btn-a' onClick={() => increment(item.id)}>+</button>
+            <button className='korzinka-btn-b' onClick={() => deleteCars(item.id)}>Delete</button>
           </div>
         ))}
       </div>

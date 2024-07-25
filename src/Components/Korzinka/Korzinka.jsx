@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const Korzinka = () => {
   const { cars, setCars } = useSharedStore();
@@ -37,7 +38,8 @@ const Korzinka = () => {
       >
         {Cars && Cars.map((item, index) => (
           <SwiperSlide className='card-item' key={index} >
-            <img className='korzinka-img-a' src={Rasm_1} alt="" />
+        <Link to={`/detail/${item.id}`}>
+        <img className='korzinka-img-a' src={Rasm_1} alt="" />
             <div className='card1'>
               <h1 className='korzinka-title'>{item.name}</h1>
               <p className='korzinka-text'>{item.text}</p>
@@ -48,6 +50,7 @@ const Korzinka = () => {
                 {add[item.name] ? "Qushilgan" : "Qushish"}
               </button>
             </div>
+        </Link>
           </SwiperSlide>
         ))}
       </Swiper>
