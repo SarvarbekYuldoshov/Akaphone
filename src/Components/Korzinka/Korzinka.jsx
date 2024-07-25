@@ -3,6 +3,7 @@ import "./Korzinka.css";
 import Cars from '../Card/Card';
 import useSharedStore from '../Store/Store';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Rasm_1 from "../images/rasm1.png"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -19,8 +20,9 @@ const Korzinka = () => {
   return (
     <div className='korzinka'>
       <div className='container korzinka-container'>
+    
         <h1 className='korzinka-title-one'>Горячие за неделью</h1>
-      <Swiper id='swiper'
+      <Swiper 
         spaceBetween={30}
         slidesPerView={4}
         hashNavigation={{
@@ -35,13 +37,13 @@ const Korzinka = () => {
       >
         {Cars && Cars.map((item, index) => (
           <SwiperSlide className='card-item' key={index} >
+            <img className='korzinka-img-a' src={Rasm_1} alt="" />
             <div className='card1'>
               <h1 className='korzinka-title'>{item.name}</h1>
-              <h2 className='korzinka-title_a'>{item.price}</h2>
-              <h3 className='korzinka-title_b'>{item.img}</h3>
-              <h4 className='korzinka-title_c'>{item.img}</h4>
-              <h4 className='korzinka-title_d'>{item.title}</h4>
-              <h4 className='korzinka-title_e'>{item.text}</h4>
+              <p className='korzinka-text'>{item.text}</p>
+              <img className='korzinka-img'src={item.img} alt="" />
+              <h2 className='korzinka-title-1'>{item.title}</h2>
+              <h4 className='korzinka-title-2'>{item.price}</h4>
               <button className='korzinka-btn' disabled={add[item.name]} onClick={() => addCard(item)}>
                 {add[item.name] ? "Qushilgan" : "Qushish"}
               </button>

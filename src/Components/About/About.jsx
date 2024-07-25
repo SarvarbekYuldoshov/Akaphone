@@ -15,7 +15,6 @@ export default function About() {
           <p className='about-text'>В нашем магазине вы сможете найти качествунную продукцию по досутпным ценам для вашего близкого человека</p>
           <button className='about-btn'>Посмотреть каталог</button>
         </ul>
-        <ul className='about-list'></ul>
         <Swiper
         effect={'cards'}
         grabCursor={true}
@@ -24,7 +23,7 @@ export default function About() {
       >
         <SwiperSlide>
           <img className='about-img' src="https://aka-phone.netlify.app/images/smart_watch.png" alt="" />
-          <h1 className='about-title-a'>Смарт часы AmazFit </h1>
+          <h1 className='about-title-a'>Смарт часы AmazFit</h1>
         </SwiperSlide>
         <SwiperSlide>
           <img className='about-img' src="https://aka-phone.netlify.app/images/smart_watch.png" alt="" />
