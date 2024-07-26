@@ -77,6 +77,7 @@ const Main = () => {
                                 </ul>
                             </div>
                         </div>
+                    <div className='card'>
                     <div className='Cards2'>
                         <div className='container Cards2-container'>
                                 <img className='Cards-img' src={Data2.img}  alt="" />
@@ -96,6 +97,7 @@ const Main = () => {
                                <span className='Cards-span'>{Data3.price}</span>
                                <button className='Cards-btn'>{Data3.button}</button>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -56,3 +56,13 @@
     background-color: #FFFF;
     color: black;
 }
+.navbar-conntainer{
+    width: 600px;
+    display: flex;
+}
+.Cards2-container{
+    width: 280px;
+}
+.card{
+    display: flex;
+}
