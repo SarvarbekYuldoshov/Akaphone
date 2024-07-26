@@ -60,9 +60,140 @@
     width: 600px;
     display: flex;
 }
+/* ------------------------------------------------------------------------Cards2------------------------------------------------------------ */
 .Cards2-container{
+    position: relative;
+    margin-top: 50px;
     width: 280px;
+    height: 250px;
+    background-color: #dc3545;;
 }
 .card{
     display: flex;
+    gap: 40px;
+}
+.Cards2-title{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    width: 100px;
+    height: 110px;
+    line-height: 27px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+.Cards2-img-a{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 190px;
+    right: 220px;
+}
+.Cards2-text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+    bottom: 220px;
+    right: 245px;
+}
+.Cards2-img{
+    position: absolute;
+    width: 150px;
+    height: 180px;
+    bottom: 95px;
+    left: 160px;
+}
+.Cards2-span{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.Cards2-btn{
+    width: 245px;
+    margin-top: 45px;
+    /* margin-left: 20px; */
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 13px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+.Cards2-btn:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(0.98);
+    transition: 1s;
+    background-color: #FFFF;
+    color: black;
+}
+/* -------------------------------------------------------Card3-------------------------------------------------------------------- */
+.Cards3-container{
+    position: relative;
+    margin-top: 50px;
+    width: 280px;
+    height: 250px;
+    background-color: #20c997;
+}
+.Cards3-title{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    width: 120px;
+    height: 110px;
+    line-height: 27px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+.Cards3-img-a{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 190px;
+    right: 220px;
+}
+.Cards3-text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+    bottom: 220px;
+    right: 245px;
+}
+.Cards3-img{
+    position: absolute;
+    width: 150px;
+    height: 170px;
+    bottom: 120px;
+    left: 140px;
+}
+.Cards3-span{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.Cards3-btn{
+    width: 245px;
+    margin-top: 45px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 13px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+.Cards3-btn:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(0.98);
+    transition: 1s;
+    background-color: #FFFF;
+    color: black;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Main.css"
 import Rasm_1 from "../images/rasm11.png"
 import Rasm_2 from "../images/rasm12.png"
@@ -8,6 +8,13 @@ import Rasm_5 from "../images/rasm15.png"
 import Rasm_6 from "../images/rasm16.png"
 import Rasm_7 from "../images/rasm1.png"
 const Main = () => {
+    const { cars, setCars } = useSharedStore();
+    const [add, setAdd] = useState({});
+  
+    const addCard = (item) => {
+      setCars([...cars, item]);
+      setAdd((prev) => ({ ...prev, [item.name]: true }));
+    }
     const Data1 = {
         img:Rasm_1,
         img1:Rasm_7,
@@ -73,29 +80,30 @@ const Main = () => {
                                     <p className='Cards1-text'>{Data1.text}</p>
                                     <span className='Cards1-span'>{Data1.price}</span>
                                     <br/>
-                                    <button className='Cards1-btn'>{Data1.button}</button>
+                                    <button onClick={()=>addCard(Data1)} className='Cards1-btn'>{Data1.button}</button>
                                 </ul>
                             </div>
                         </div>
                     <div className='card'>
                     <div className='Cards2'>
                         <div className='container Cards2-container'>
-                                <img className='Cards-img' src={Data2.img}  alt="" />
-                                <h1 className='Cards-title'>{Data2.title}</h1>
-                                <img className='Cards-img-a' src={Data2.img1} alt="" />
-                                <p className='Cards-text'>{Data2.text}</p>
-                                <span className='Cards-span'>{Data2.price}</span>
-                                <button className='Cards-btn'>{Data2.button}</button>
+                                <h1 className='Cards2-title'>{Data2.title}</h1>
+                                <img className='Cards2-img-a' src={Data2.img1} alt="" />
+                                <p className='Cards2-text'>{Data2.text}</p>
+                                <span className='Cards2-span'>{Data2.price}</span>
+                                <br/>
+                                <button className='Cards2-btn'>{Data2.button}</button>
+                                <img className='Cards2-img' src={Data2.img}  alt="" />
                         </div>
                     </div>
                    <div className='Cards3'>
                         <div className='container Cards3-container'>
-                               <img className='Cards-img' src={Data3.img}  alt="" />
-                               <h1 className='Cards-title'>{Data3.title}</h1>
-                               <img className='Cards-img-a' src={Data3.img1} alt="" />
-                               <p className='Cards-text'>{Data3.text}</p>
-                               <span className='Cards-span'>{Data3.price}</span>
-                               <button className='Cards-btn'>{Data3.button}</button>
+                               <img className='Cards3-img' src={Data3.img}  alt="" />
+                               <h1 className='Cards3-title'>{Data3.title}</h1>
+                               <img className='Cards3-img-a' src={Data3.img1} alt="" />
+                               <p className='Cards3-text'>{Data3.text}</p>
+                               <span className='Cards3-span'>{Data3.price}</span>
+                               <button className='Cards3-btn'>{Data3.button}</button>
                         </div>
                     </div>
                     </div>
@@ -138,4 +146,5 @@ const Main = () => {
 }
 import "./Main.css"
 import Cards from '../Cards/Cards'
+import useSharedStore from '../Store/Store'
 export default Main
