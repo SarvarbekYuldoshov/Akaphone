@@ -1,0 +1,58 @@
+.navbar{
+    display: flex;
+}
+.Cards1-container{
+    position: relative;
+    background-color:#007bff;;
+    width: 600px;
+    height: 250px;
+    display: flex;
+}
+.Cards1-img-a{
+   position: absolute;
+   width: 90px;
+   height: 90px;
+   bottom: 190px;
+   left: 550px;
+}
+.Cards1-text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+    bottom: 220px;
+    left: 570px;
+}
+.Cards1-title{
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 32px;
+}
+.Cards1-span{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 260px;
+}
+.Cards1-btn{
+    margin-top: 50px;
+    margin-left: 110px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 13px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 188px;
+    transition: 0.3s ease-in-out;
+}
+.Cards1-btn:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(0.98);
+    transition: 1s;
+    background-color: #FFFF;
+    color: black;
+}
