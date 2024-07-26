@@ -22,7 +22,7 @@ const Shopping = () => {
   return (
     <div className='shopping'>
       <div className='container shopping-shopping'>
-        <h1>Qushilgan mashinalar</h1>
+        <h1>Qushilgan Aksesuarlar</h1>
         {cars && cars.map((item, index) => (
           <div key={index} className='card1'>
             <h1 className='korzinka-title'>{item.name}</h1>
