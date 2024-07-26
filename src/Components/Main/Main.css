@@ -282,7 +282,7 @@
     width: 90px;
     height: 90px;
     bottom: 190px;
-    right: 220px;
+    right: 200px;
 }
 .Cards5-text{
     position: absolute;
@@ -290,7 +290,7 @@
     font-size: 25px;
     font-weight: 700;
     bottom: 220px;
-    right: 245px;
+    right: 230px;
 }
 .Cards5-img{
     position: absolute;
@@ -318,6 +318,76 @@
     transition: 0.3s ease-in-out;
 }
 .Cards5-btn:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(0.98);
+    transition: 1s;
+    background-color: #FFFF;
+    color: black;
+}
+.cards{
+    flex-wrap: wrap;
+}
+
+/* ----------------------------------------------------------------Cards6--------------------------------------------------------------- */
+.Cards6-container{
+    margin-top: 280px;
+    margin-left: -260px;
+    position: relative;
+    width: 230px;
+    height: 250px;
+    background-color:#0d4e8c;
+}
+.Cards6-title{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    width: 120px;
+    height: 80px;
+    line-height: 27px;
+    color: rgb(255, 255, 255);
+}
+.Cards6-img-a{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 190px;
+    right: 200px;
+}
+.Cards6-text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+    bottom: 220px;
+    right: 230px;
+}
+.Cards6-img{
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    bottom: 70px;
+    left: 40px;
+}
+.Cards6-span{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.Cards6-btn{
+    width: 200px;
+    margin-top: 70px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 13px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+.Cards6-btn:hover{
     border: 1px solid rgb(255, 255, 255);
     transform: scale(0.98);
     transition: 1s;

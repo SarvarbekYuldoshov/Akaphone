@@ -90,7 +90,7 @@ const Main = () => {
                                 <p className='Cards2-text'>{Data2.text}</p>
                                 <span className='Cards2-span'>{Data2.price}</span>
                                 <br/>
-                                <button className='Cards2-btn'>{Data2.button}</button>
+                                <button onClick={()=>addCard(Data2)} className='Cards2-btn'>{Data2.button}</button>
                                 <img className='Cards2-img' src={Data2.img}  alt="" />
                             </div>
                         </div>
@@ -101,7 +101,7 @@ const Main = () => {
                                <img className='Cards3-img-a' src={Data3.img1} alt="" />
                                <p className='Cards3-text'>{Data3.text}</p>
                                <span className='Cards3-span'>{Data3.price}</span>
-                               <button className='Cards3-btn'>{Data3.button}</button>
+                               <button onClick={()=>addCard(Data3)} className='Cards3-btn'>{Data3.button}</button>
                             </div>
                         </div>
                     </div>
@@ -112,35 +112,37 @@ const Main = () => {
                         <div className='Cards4'>
                             <div className='container Cards4-container'>
                                 <h1 className='Cards4-title'>{Data4.title}</h1>
-                                <img className='Cards4-img-a' src={Data4.img1} alt="" />
                                 <p className='Cards4-text'>{Data4.text}</p>
                                 <span className='Cards4-span'>{Data4.price}</span>
                                 <img className='Cards4-img' src={Data4.img}  alt="" />
-                                <button className='Cards4-btn'>{Data4.button}</button>
+                                <button onClick={()=>addCard(Data4)} className='Cards4-btn'>{Data4.button}</button>
                             </div>
                         </div>
                     <div className='Cards5'>
-                <div className='container Cards5-container'>
+                <div className='cards'>
+            <div className='container Cards5-container'>
                                 <img className='Cards5-img' src={Data5.img}  alt="" />
                                 <h1 className='Cards5-title'>{Data5.title}</h1>
                                 <img className='Cards5-img-a' src={Data5.img1} alt="" />
                                 <p className='Cards5-text'>{Data5.text}</p>
                                 <span className='Cards5-span'>{Data5.price}</span>
-                                <button className='Cards5-btn'>{Data5.button}</button>
-                            </div>
-                        </div>
-                    <div className='Cards6'>
-                <div className='container Cards6-container'>
-                                <img className='Cards-img' src={Data6.img}  alt="" />
-                                <h1 className='Cards-title'>{Data6.title}</h1>
-                                <img className='Cards-img-a' src={Data6.img1} alt="" />
-                                <p className='Cards-text'>{Data6.text}</p>
-                                <span className='Cards-span'>{Data6.price}</span>
-                                <button className='Cards-btn'>{Data6.button}</button>
+                                <button onClick={()=>addCard(Data5)} className='Cards5-btn'>{Data5.button}</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                <div className='Cards6'>
+               <br/>
+            <div className='container Cards6-container'>
+                                <img className='Cards6-img' src={Data6.img}  alt="" />
+                                <h1 className='Cards6-title'>{Data6.title}</h1>
+                                <img className='Cards6-img-a' src={Data6.img1} alt="" />
+                                <p className='Cards6-text'>{Data6.text}</p>
+                                <span className='Cards6-span'>{Data6.price}</span>
+                                <button onClick={()=>addCard(Data6)} className='Cards6-btn'>{Data6.button}</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
             </div>
         </div>
     </div>
