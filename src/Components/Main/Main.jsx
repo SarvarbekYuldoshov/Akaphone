@@ -109,6 +109,8 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+            <div className='hunner'>
+            <div className='card'>
                 <div className='Cards4'>
                     <div className='container Cards4-container'>
                         <img className='Cards-img' src={Data4.img}  alt="" />
@@ -139,6 +141,8 @@ const Main = () => {
                        <button className='Cards-btn'>{Data6.button}</button>
                     </div>
                </div>
+            </div>
+            </div>
             </div>
         </div>
     </div>
