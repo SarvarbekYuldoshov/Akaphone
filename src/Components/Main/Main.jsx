@@ -40,11 +40,11 @@ const Main = () => {
         button:"Add To Cart "
     }
     const Data4 = {
+        title:"Кресло INDI CA-1613A-1",
+        text:"5%",
+        price:"5 ₽",
         img:Rasm_4,
         img1:Rasm_7,
-        title:"Кресло INDI CA-1613A-1",
-        text:"5 %",
-        price:"5 ₽",
         button:"Add To Cart "
     }
     const Data5 = {
@@ -113,12 +113,12 @@ const Main = () => {
             <div className='card'>
                 <div className='Cards4'>
                     <div className='container Cards4-container'>
-                        <img className='Cards-img' src={Data4.img}  alt="" />
-                        <h1 className='Cards-title'>{Data4.title}</h1>
-                        <img className='Cards-img-a' src={Data4.img1} alt="" />
-                        <p className='Cards-text'>{Data4.text}</p>
-                        <span className='Cards-span'>{Data4.price}</span>
-                       <button className='Cards-btn'>{Data4.button}</button>
+                        <h1 className='Cards4-title'>{Data4.title}</h1>
+                        <img className='Cards4-img-a' src={Data4.img1} alt="" />
+                        <p className='Cards4-text'>{Data4.text}</p>
+                        <span className='Cards4-span'>{Data4.price}</span>
+                        <img className='Cards4-img' src={Data4.img}  alt="" />
+                       <button className='Cards4-btn'>{Data4.button}</button>
                     </div>
                </div>
                <div className='Cards5'>

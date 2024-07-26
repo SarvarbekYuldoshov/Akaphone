@@ -1,5 +1,7 @@
 .navbar{
     display: flex;
+    margin-top: 50px;
+    gap: 40px;
 }
 .Cards1-container{
     position: relative;
@@ -202,3 +204,66 @@
     flex-wrap: wrap;
 }
 /* -------------------------------------------------------------------Cards4----------------------------------------------------------- */
+.Cards4-container{
+    position: relative;
+    background-color:#28a745;
+    width: 300px;
+    height: 550px;
+}
+.Cards4-title{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    width: 300px;
+    height: 70px;
+    line-height: 27px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+.Cards4-img-a{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 490px;
+    left: 260px;
+}
+.Cards4-text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+    bottom: 520px;
+    left: 280px;
+}
+.Cards4-img{
+    margin-top: 80px;
+    width: 200px;
+    height: 250px;
+}
+.Cards4-span{
+    font-family: "Montserrat" ,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+}
+.Cards4-btn{
+    width: 260px;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 13px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+.Cards4-btn:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(0.98);
+    transition: 1s;
+    background-color: #FFFF;
+    color: black;
+}
