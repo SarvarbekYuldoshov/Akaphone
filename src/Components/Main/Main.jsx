@@ -64,6 +64,7 @@ const Main = () => {
   return (
     <div className='main'>
         <div className='container main-container'>
+            <h1 className='main-title'>Специальные предложения</h1>
             <div className='navbar'>
                 <div className='navbar-conntainer'>
                     <div className='layout'>
