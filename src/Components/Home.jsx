@@ -3,6 +3,7 @@ import Korzinka from './Korzinka/Korzinka'
 import About from './About/About'
 import Main from './Main/Main'
 import Menu from './Menu/Menu'
+import Food from './Food/Food'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Korzinka/>
         <Main/>
         <Menu/>
+        <Food/>
     </div>
   )
 }
