@@ -10,6 +10,7 @@ export default function App() {
     <>
     <div className='menu'>
         <div className='container  menu-container'>
+            <h1 className='menu-title'>Каталог товаров</h1>
         <Swiper
         slidesPerView={4}
         spaceBetween={30}
