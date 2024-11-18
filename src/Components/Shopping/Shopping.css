@@ -11,9 +11,9 @@
     transition: 1s;
 }
 .korzinka-btn-b{
-    border: 1px solid black;
+    border: 1px solid rgb(1, 1, 1);
     background-color: transparent;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-left: 10px;
     width: 100px;
     height: 30px;
