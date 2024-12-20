@@ -75,7 +75,7 @@
 }
 
 .swiper-slide:nth-child(1n) {
-  background-color: blue;
+  background-color: rgb(17, 17, 255);
 }
 
 .swiper-slide:nth-child(2n) {
