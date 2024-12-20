@@ -70,8 +70,8 @@
 .header-btn:hover{
     transform: scale(0.99);
     transition: 1s;
-    background: #eb4d4d;
-    color: #FFFF;
+    background: #d84848;
+    color: #fffbfb;
 }
 .header-link-a{
     font-size: 35px;
