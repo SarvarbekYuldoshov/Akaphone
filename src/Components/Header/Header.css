@@ -96,7 +96,7 @@
      display: inline-block;
 }
 .header-link-a:hover{
-    color: red;
+    color: rgb(252, 7, 7);
     transform: scale(1.090);
     transition: 1s;
 }
